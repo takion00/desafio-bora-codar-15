@@ -1,0 +1,206 @@
+:root {
+  --light-purple: #996DFF ;
+  --dark-purple: #7C3AED;
+  --orange: #FBA94C;
+  --dark-green: #1B873F;
+  --light-green: #04D361;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #1E293B;
+  --gray-800: #0F172A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: var(--gray-100);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cards-group  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  flex-grow: 1;
+
+  width: 40rem;
+  min-width: 37rem;
+  height: 46.6rem;
+  padding: 3.2rem 3.2rem 4.8rem;
+  border-radius: 1rem;
+  
+  position: relative;
+}
+
+.card-bg-light {
+  background-color: white;
+  color: var(--gray-800);
+}
+
+.card-bg-dark {
+  background-color: var(--gray-800);
+  color: white;
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--dark-purple);
+  margin-bottom: .8rem;
+}
+
+.content .plan {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .plan h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.content .plan .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.content .plan .mensal {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.button-container .button {
+  display: block;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  border-radius: .4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background 200ms linear;
+} 
+
+.button-container .btn-white {
+  color: var(--gray-800);
+  border: 1px solid  var(--gray-800);
+}
+
+.button-container .btn-white:hover {
+  background: var(--gray-800);
+  color: white;
+}
+
+.button-container .btn-purple {
+  color: white;
+  background: var(--light-purple);
+}
+
+.button-container .btn-purple:hover {
+  background-color: var(--dark-purple);
+}
+
+.line-white {
+  height: 0.1rem;
+  background: var(--gray-200);
+}
+
+.line-dark {
+  height: 0.1rem;
+  background-color: var(--gray-700);
+
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  
+}
+
+.resources-light {
+  color: var(--gray-600);
+}
+
+.resources-dark {
+  color: var(--gray-300);
+}
+
+.resources .res {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resources .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.tag {
+  height: 3.4rem;
+  width: 13.3rem;
+  background-color: var(--orange);
+  color: var(--gray-800);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: .6rem;
+  padding: .6rem .8rem;
+  position: absolute;
+
+  /* left: 50%; */
+  right: 32%;
+  top: -4%;
+}
+
+@media (max-width: 1200px) {
+  .cards-group {
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+
+  .card {
+    max-width: 37rem;
+  }
+  
+}
